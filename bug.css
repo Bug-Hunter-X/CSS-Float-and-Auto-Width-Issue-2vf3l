@@ -1,0 +1,10 @@
+The following CSS code causes unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue is that if the parent element's width is not specified, the div will not be 50% of the available space as one might expect. Instead, it will take up 50% of its parent's *auto* width.
