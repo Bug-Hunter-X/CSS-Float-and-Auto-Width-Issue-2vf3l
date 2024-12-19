@@ -1,0 +1,53 @@
+To fix this issue, ensure the parent element has a defined width. This can be done by setting a fixed width, using width: 100% to take the width of its parent, or by using a flexbox or grid layout:
+
+**Solution 1: Setting a fixed width for the parent**
+
+```css
+.parent {
+  width: 800px;
+}
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+**Solution 2: Using width: 100% for the parent**
+
+```css
+.parent {
+  width: 100%;
+}
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+**Solution 3: Using Flexbox**
+
+This is generally preferred for modern layouts:
+
+```css
+.parent {
+  display: flex;
+}
+div {
+  width: 50%;
+}
+```
+
+**Solution 4: Using Grid**
+
+Another modern solution:
+
+```css
+.parent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+div {
+  width: 100%;
+}
+```
+Choose the solution that best fits your overall layout and design.
